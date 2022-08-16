@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Kenxieflix.css">
+    <link rel="shortcut icon" href="img/icone kz.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>KenzieFlix</title>
+</head>
+<body>
+        <!-- navbar -->
+        <div class="nav">
+            <div class="nav__left">
+              <img class="nav_logo" src="img/Kenzieflix logo.png" alt="">
+
+            </div>
+            <div class="nav__right">
+              <a href="index.html"><img src="img/pink.png" class="nav_avatar" alt=""></a>
+            </div>
+        </div>
+      
+          <!-- banner -->
+          <header id="banner">
+            <div id="banner__contents">
+              <h1 id="banner__title"></h1>
+              <div id="banner__buttons">
+              <button id="banner__button">Assistir</button>
+              <button id="banner__button">Minha lista</button>
+            </div>
+            <p id="banner__description"></p>
+            </div>
+            <div id="banner__fadeBottom"></div>
+          </header>
+      
+          <!-- row -->
+          <div id="headrow">
+            <div class="row">
+              <h2 class="row__title"></h2>
+              <div class="row__posters"></div>
+            </div>
+          </div>
+          <span id="bor">:></span>
+          <script src="app.js"></script>
+          <script>
+            window.addEventListener("scroll",function(){
+      
+              var nav = document.querySelector(".nav");
+              nav.classList.toggle("active", window.scrollY > 0);
+            }) 
+          </script>
+</body>
+</html>

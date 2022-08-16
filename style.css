@@ -1,0 +1,73 @@
+body{
+    background-color: #141414;
+    width: 100%;
+    height: 100%;
+}
+header{
+    background-image: linear-gradient(to top, #141414,black );
+}
+header img{
+ margin: 10px 0px 0px 60px;
+ width: 150px;
+}
+.conteudo{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 100%;
+    max-width: 700px;
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size:350%;
+    margin-bottom: 5%;
+    width: 100%;
+    }
+.perfis{
+    display: flex;
+    width: 100%;
+    justify-content:space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.perfil{
+    width: 160px;
+    height: 160px;
+    border-radius:10px;
+    overflow: hidden;
+    border: 2px solid #141414;
+    margin: 5px;
+}
+section p {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: rgba(255, 255, 255, 0.845);
+}
+.perfil:hover{
+    border: 2px solid white;
+    color: white;
+    cursor:pointer ;
+}
+.gerenciador{
+    border: 2px solid rgba(255, 255, 255, 0.437);
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    padding: 20px;
+    font-size: 23px;
+    color: rgba(255, 255, 255, 0.437);
+    width: 250px;
+    margin: auto;
+    margin-top: 10%;
+}
+.gerenciador:hover{
+    border: 2px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    cursor:pointer;
+}

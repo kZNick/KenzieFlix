@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    font-family: 'Netflix Sans', sans-serif;
+    background-color: #141414;
+  }
+  ::-webkit-scrollbar{
+    width: 7px;
+    background-color: #111;
+  }
+  ::-webkit-scrollbar-thumb{
+    background-color: white;
+    border-radius: 10px;
+  }
+  .nav{
+    position: fixed;
+    top: 0;
+    padding: 20px 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+    transition-timing-function: ease-in;
+    transition: all .5s;
+    color: white;
+  }
+  .nav.active{
+    background-color: #111;
+  }
+  .nav__left{
+    margin-left: 10px;
+  
+  }
+  .nav_logo{
+    width: 120px
+  }
+  .nav__right{
+    position: fixed;
+    right: 20px;
+    display: flex;
+    margin-right: 10px;
+  }
+  .nav_avatar{
+    width: 35px;
+  }
+  #banner{
+    color: white;
+    object-fit: contain;
+    height: 844px;
+    background-position: center center;
+    background-size: cover;
+  }
+  #banner__contents{
+    margin-left: 70px;
+    padding-top: 250px;
+    height: 190px;
+  
+  }
+  #banner__title{
+    font-size: 4rem;
+    font-weight: 800;
+    padding-bottom: 0.3rem;
+  }
+  #banner__description{
+    width: 45rem;
+    line-height: 1.5;
+    padding-top: 1rem;
+    font-size: 1.25rem;
+    max-width: 360px;
+    height: 90px;
+  }
+  #banner__button{
+    cursor: pointer;
+    color: white;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    border-radius: .2vw;
+    padding-left: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-right: 2rem;
+    margin-right: 1rem;
+    padding-top: .5rem;
+    background-color: rgba(51,51,51,.5);
+    padding-bottom: .5rem;
+    font-size: 150%;
+  }
+  #banner__button:hover{
+    color: black;
+    background-color: #e6e6e6;
+    transition: all .3s;
+  }
+  #banner__fadeBottom{
+      height: 26rem;
+      background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0),#141414 95%);
+  }
+  
+  .row{
+    margin-left: 20px;
+    color: white;
+  }
+  .row__poster{
+    object-fit: contain;
+    width: 100%;
+    max-height: 120px;
+    margin-right: 10px;
+    transition: transform 500ms;
+    
+  }
+  .row__posters::-webkit-scrollbar{
+    background-color: #141414;
+  }
+  .row__posters::-webkit-scrollbar-thumb{
+    background-color: #00000016;
+  }
+  .row__posters::-webkit-scrollbar-thumb:hover{
+    background-color: #000000a8;
+  }
+  .row__posters{
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 20px;
+    transform: translateY(-80%);
+  }
+  .row__poster:hover{
+    transform: scale(1.08);
+  }
+  .row__posterLarge, 
+  .row__posterLarge1,
+  .row__posterLarge2{
+    object-fit: contain;
+    width: 100%;
+    max-height: 250px;
+    margin-right: 5px;
+    transition: transform 500ms;
+  
+  }
+  .row__posterLarge:hover,
+  .row__posterLarge1:hover,
+  .row__posterLarge2:hover{
+    transform: scale(1.2);
+    opacity: 1;
+  
+  }
+  .row__title{
+      transform: translateY(-800%);
+  }
